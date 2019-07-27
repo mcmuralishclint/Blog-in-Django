@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+<h2>Search Results</h2>
+  {%block content%}
+  	{%for result in queryset%}
+  		<a>{{result.title}}</a>
+  	{%endfor%}
+  {%endblock content%}  	}
